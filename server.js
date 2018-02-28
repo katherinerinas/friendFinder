@@ -7,16 +7,18 @@ var Path=require("path");
 var PORT = process.env.PORT || 8080;
 
 
+var jsonParser = bodyParser.json()
+
+var urlencoudedParser = bodyParser.urlencoded({extended:false})
+
+app.use(bodyParser.json({ type: 'application/++json'}))
 
 
+app.use(bodyParser.raw({type: 'application/vnd.custom-type'}))
 
+app.use(bodyParser.text({type: 'text/html'}))
 
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
-
-require("./routing/apiRoutes.js")(app);
-require("./routing/htmlRoutes.js")(app);
+require("./app/routing/html-routes.js")(app);
 
 
 app.listen(PORT, function() {

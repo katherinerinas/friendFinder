@@ -1,6 +1,6 @@
 
-require("./api/friends")(app);
-require("./api/friends")(app);
+//require("./api/friends")(app);
+//require("./api/friends")(app);
 
 
 app.get('/', function (req, res) {
