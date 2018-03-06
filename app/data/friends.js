@@ -1,8 +1,40 @@
 
-//Objects array for users/friend searchers.  should push new objects from forms that user fills out into this array...
-var friends=
+
+var friends=[
 {
-  "name":"Ahmed",
+  "name":"Ross",
+  "photo":"https://goo.gl/images/RzypUq",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+},
+{
+  "name":"Rachel",
+  "photo":"https://goo.gl/images/eZpWEw",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+},
+{
+  "name":"Monica",
   "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
   "scores":[
       5,
@@ -17,6 +49,57 @@ var friends=
       1
     ]
 },
+{
+  "name":"Phoebe",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+},
+{
+  "name":"Chandler",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+  },
+  {
+  "name":"Joey",
+  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "scores":[
+      5,
+      1,
+      4,
+      4,
+      5,
+      1,
+      2,
+      5,
+      4,
+      1
+    ]
+  }
+];
+
+
 
 
 module.exports = friends;
