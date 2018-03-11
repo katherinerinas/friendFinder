@@ -37,10 +37,16 @@ for (var i = 0; i < friends.length; i++) {
 
 		if (totalDifference <= bestFriend.friendDifference) {
 
+			bestMatch.name = friends[i].name;
+			bestMatch.photo = friends[i].photo;
+			bestMatch.friendDifference = totalDifference;
+
+
+
 		}
 	}
-}
-
+  }
 });
 
- }
+	friends.push(userData);
+ 
