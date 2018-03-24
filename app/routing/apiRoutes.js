@@ -23,23 +23,25 @@ module.exports= function (app) {
 
 		console.log (userScores);
 
-		var totalDifference = 0;
+		var totalDifference;
 
 		for (var i = 0; i < friends.length; i++) {
-			console.log (friends [i]);
+			var currentFriend = friends [i];
 			totalDifference = 0;
 
-			for (var j = 0; i < friends[i].scores[j]; j++){
+			for (var j = 0; i < currentFriend.scores.length; j++){
+			   var currentFriendScore= currentFriend.scores[j];
+			   var currentUserScore=userScores[j];
 
 
 
-				totalDifference += math.abs(parseInt(userScores[j])-parseInt(friends[i].scores[j]));
+				totalDifference += math.abs(parseInt(currentUserScore-parseInt(currentFriendScore));
 
 				if (totalDifference <= bestFriend.friendDifference) {
 
-					bestMatch.name = friends[i].name;
-					bestMatch.photo = friends[i].photo;
-					bestMatch.friendDifference = totalDifference;
+					bestFriend.name = currentFriend.name;
+					bestFriend.photo = currentFriend.photo;
+					bestFriend.friendDifference = totalDifference;
 
 
 
@@ -47,7 +49,7 @@ module.exports= function (app) {
 			}
 		}
 
-		res.send(bestMatch);
+		res.json(bestFriend);
 		friends.push(userData);
 	});
 
